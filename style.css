@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  :root{
+    --color: #790a0a;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color);
+    padding: 20px;
+  }
+  
+  #container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+  }
+  #container  h1{
+    color: var(--color);
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button#search {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+  }
+  
+  button#search:hover {
+    background-color: #c50b0b;
+  }
+  
+  #display {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  #display div {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+  }
+  
+  #display div:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  #display img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #display h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: var(--color);
+  }
+  
+  #display p {
+    font-size: 0.9rem;
+    color: var(--color);
+  }
+  
+  #display a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--color);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  #display a:hover {
+    background-color: var(--color);
+  }
+  @media (max-width: 600px) {
+    input[type="text"] {
+      width: 100%;
+    }
+  
+    #display {
+      grid-template-columns: 1fr;
+    }
+  }
+  
